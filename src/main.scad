@@ -1,2 +1,2 @@
 include <parameters.scad>;
-include <../../lib/main.scad>;
+include <../lib/main.scad>;
