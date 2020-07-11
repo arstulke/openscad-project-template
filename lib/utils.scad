@@ -1,5 +1,3 @@
-resolution = general_resolution ? general_resolution : 50;
-
 module halveObj(x, y, z, size) {
     translate_x = x ? -25: 0;
     translate_y = y ? -25: 0;
@@ -24,14 +22,12 @@ module ring(d_outer, d_inner, h) {
         anti_glitch(false, false, false) 
         cylinder(   d = d_outer,
                     h = h,
-                    center = true,
-                    $fn = general_resolution);
+                    center = true);
 
         anti_glitch(false, false, true) 
         cylinder(   d = d_inner,
                     h = h,
-                    center = true,
-                    $fn = resolution);
+                    center = true);
     }
 }
 
