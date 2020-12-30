@@ -9,5 +9,5 @@ do
   echo "src_file ${src_file}"
   echo "out_file ${out_file}"
   echo ""
-  openscad ${src_file} -o ${out_file}
+  openscad -D "render=true;" ${src_file} -o ${out_file}
 done
