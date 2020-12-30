@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #renders each file in src/views
 
 mkdir -p output
